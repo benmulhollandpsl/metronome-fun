@@ -3,4 +3,12 @@ body{
     background: -moz-linear-gradient(top, #FFD200 0%, #00A47F 50%, #00FFFF 100%);
     background: -webkit-linear-gradient(top, #FFD200 0%, #00A47F 50%, #00FFFF 100%);
     background: linear-gradient(to bottom, #FFD200 0%, #00A47F 50%, #00FFFF 100%);
+    font-family: 'Snippet', sans-serif;
+
+
+}
+
+h1, p{
+    font-family: 'Snippet', sans-serif;
+
 }
