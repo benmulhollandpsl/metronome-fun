@@ -4,7 +4,8 @@ adding an interactive gif and login page using mongo db
 
 future plans for this are a drone page, a users only area for drones, and js related music apps
 
-
+## about: 
+I started this in early 2009 while teaching beginning band and orchestra in Philadelphia to 1st-6th graders.  When I was 10 my beginning band had a special song called "Ghost Song" that inspired this journey.  Along the way I found some traditional songs inspired by the fantastic.  I'll include these songs in the gnome song section of this page as I edit and publish them.  My goal for this page is as a useful tool and resourse for the music teacher and student alike.  Hence, the inclusion of a Metrognome and Gnomedrones.  If I learn how to make a Gnometuner I'll be sure to include that in the future too. 
 
 
 
