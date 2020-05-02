@@ -1,0 +1,23 @@
+{
+  "name": "metronome-fun",
+  "version": "1.0.0",
+  "description": "a gnome based metronome app",
+  "main": "index.js",
+  "dependencies": {
+    "lottie-web": "^5.6.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benmulhollandpsl/metronome-fun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benmulhollandpsl/metronome-fun/issues"
+  },
+  "homepage": "https://github.com/benmulhollandpsl/metronome-fun#readme"
+}
