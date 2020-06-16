@@ -68,22 +68,35 @@ gnome songs and metrognome -->
       </div>
       
       
-      
-      
       <div class="w3-row">
-        <div class="w3-half">
-          <img src="/w3images/coffee.jpg" style="width:100%">
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>
+              <img src="./assets/images/troll2.png" style="width:100%">
+            </kbd>
+          <span class="sound">Troll Polka Piano</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>
+            <img src="./assets/images/troll1.png" style="width:100%">
+          </kbd>
+          <span class="sound">Troll Polka Horns</span>
+        </div>
+
+        <audio data-key="65" src="./assets/sound/The Troll's Polka100.mid"></audio>  
+        <audio data-key="83" src="./assets/sound/troll polka horn quartet.mid"></audio>
+      
+          
 
           <!-- <a href="https:link to song in sheet music plus">
             <img src="same as above img src" alt="alttext" target="_blank">
                     include this for all variations of the troll and gnome songs  
           </a> -->
 
-
-
+          <!-- consider removving data-key and replace with simple onclick play audio -->
         </div>
         <div class="w3-half">
-          <img src="/w3images/workbench.jpg" style="width:100%">
+          
         </div>
       </div>
 
@@ -92,28 +105,35 @@ gnome songs and metrognome -->
 
       <div class="w3-row w3-hide-small">
         <div class="w3-half">
-          <img src="/w3images/workbench.jpg" style="width:100%">
+          <img src="./assets/images/troll1.png" style="width:100%">
         </div>
         <div class="w3-half">
-          <img src="/w3images/coffee.jpg" style="width:100%">
+          <img src="./assets/images/troll2.png" style="width:100%">
         </div>
       </div>
   
 
 
-      <div class="w3-row w3-hide-small">
-        <div class="w3-half">
-          <img src="/w3images/sound.jpg" style="width:100%">
-        </div>
-        <div class="w3-half">
-          <img src="/w3images/workbench.jpg" style="width:100%">
-        </div>
-      </div><br>
+      <br>
       <p>Want to bring the songs of trolls and gnomes to your school?</p>
       <!-- link to sign up page and link to band school music page or just songs  and possibly newsletters-->
     </div>
     
-    
+    <script>
+      function playSound(e){
+
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        if (!audio) return;
+        audio.currentTime = 0;
+        audio.play();
+        key.classList.add('playing');
+      }
+
+      const keys = document.querySelectorAll('.key');
+      keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+      window.addEventListener('keydown',playSound);
+    </script>
 
 
 
