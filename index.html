@@ -67,7 +67,7 @@ gnome songs and metrognome -->
         <p>The latest in gnome songs!</p>
       </div>
       
-      
+      <!-- likely wont play corresponding to keystroke due to class structure -->
       <div class="w3-row">
       <div class="keys">
         <div data-key="65" class="key">
@@ -83,8 +83,8 @@ gnome songs and metrognome -->
           <span class="sound">Troll Polka Horns</span>
         </div>
 
-        <audio data-key="65" src="./assets/sound/The Troll's Polka100.mid"></audio>  
-        <audio data-key="83" src="./assets/sound/troll polka horn quartet.mid"></audio>
+        <audio data-key="65" src="./assets/sound/the-trolls-polka-100bpm.wav"></audio>  
+        <audio data-key="83" src="./assets/sound/the-trolls-polka-100bpm.wav"></audio>
       
           
 
@@ -120,7 +120,7 @@ gnome songs and metrognome -->
     </div>
     
     <script>
-      function playSound(e){
+      function trollPolksa(e){
 
         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -132,10 +132,14 @@ gnome songs and metrognome -->
 
       const keys = document.querySelectorAll('.key');
       keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-      window.addEventListener('keydown',playSound);
+      window.addEventListener('keydown', trollPolksa(e){
+        //e is event object
+        
+      })
+
+
     </script>
-
-
+      <button onclick="trollPolksa('./sound/the-trolls-polka-100bpm.wav')"> button1</button>
 
     <!-- teh metrognome see js file -->
     <div class="w3-half w3-indigo w3-container" style="min-height:800px" id="metrognome">
@@ -187,10 +191,10 @@ drones and contact with tip jar and links -->
         <h1>DroneGnome</h1>
       </div>
       <div class="w3-padding-64">
-        <p>..for a cup of coffee, or whatever.</p>
-        <p>Chicago, US</p>
-        <p>+00 1515151515</p>
-        <p>test@test.com</p>
+        <p>..this page was made as learning tool while attending</p>
+        <p>Upenn's Dec-June online Full-stack Web dev</p>
+        <p>bootcamp</p>
+        <p>a future version of this will include a metronome and tuner</p>
       </div>
     </div>
 
