@@ -1,17 +1,23 @@
+// when refactoring, remove this File
+
+
+
+
+
 // ================================
 // click to hide overflowing text, probably will just put this in a new section
 // =================================
 
 
-function hideOverflows() {
+// function hideOverflows() {
     
-  var x = document.getElementById("aboutthegnomes");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
-};
+//   var x = document.getElementById("aboutthegnomes");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// };
 
 
 // ================================
