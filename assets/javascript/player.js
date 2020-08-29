@@ -68,7 +68,7 @@ function hideOverflows() {
       
       }
       playSong();
-      $("#play img").attr("src","./assets/audio/pause.png");
+      $("#play img").attr("src","./assets/images/pause.png");
       $("#imageAlbum img").attr("src",poster[currentSong]); //should change background poster
       $("#bg img").attr("src",poster[currentSong]);
   
@@ -81,7 +81,7 @@ function hideOverflows() {
       
       }
       playSong();
-      $("#play img").attr("src","./assets/audio/pause.png");
+      $("#play img").attr("src","./assets/images/pause.png");
       $("#imageAlbum img").attr("src",poster[currentSong]); 
       $("#bg img").attr("src",poster[currentSong]);
   

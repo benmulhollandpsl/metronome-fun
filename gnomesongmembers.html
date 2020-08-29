@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <!--style sheet is from template from w3schools.com-->
+    <body class="w3-content" style="max-width:1300px">
+        <title>TROLL AND GNOME PLAYER</title>
+    </head>
+    <body>
+      
+
+
+
+   <!-- audio player built while making 3rd version of 2nd portfolio -->
+
+   <div id="bg">
+    <div id="blackLayer"></div>
+    <img src="./assets/images/quaranrelaxcover.jpg"/>
+  </div>
+
+  <div id="mainAlbum">
+    <div id="imageAlbum">
+      <img src="./assets/images/quaranrelaxcover.jpg"/>
+    </div>
+    <div id="player">
+      <div id="songTitle">Demo</div>
+      <div id="buttons">
+        <button id="pre" onclick="prev()"><img src="./assets/images/leftbutton.png" height="90%" width="90%"/></button>
+        <button id="play" onclick="playOrPauseSong()"><img src="./assets/images/playbuttton.png" height="90%" width="90%"/></button> 
+        <button id="next" onclick="next()"><img src="./assets/images/rightbutton.png" height="90%" width="90%"/></button>
+        </div>
+      
+        <div id="seek-bar">
+          <div id="fill"></div>
+          <div id="handle"></div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="w3-container w3-black w3-padding-16">
+        <p>all images, music, and sound © 2020 by Ben Mulholland. This web template is from w3schools.com <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </footer>
+      
+
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+      <!-- <script type="text/javascript" src="./assets/javascript/app.js"></script> -->
+      <script type="text/javascript" src="./assets/javascript/player.js"></script>
+
+</body>
+
+</HTML>
